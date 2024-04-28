@@ -7,6 +7,7 @@ const checkoutBtn = document.getElementById('checkout-btn')
 const cartCount = document.getElementById('cart-count')
 const adressInput = document.getElementById('address')
 const adressWarn = document.getElementById('address-warn')
+const closeModalBtn = document.getElementById('close-modal-btn')
 
 
 
@@ -18,4 +19,8 @@ modal.addEventListener('click', function (event) {
     if (event.target === modal) {
         modal.style.display = 'none'
     }
+})
+
+closeModalBtn.addEventListener('click', function () {
+    modal.style.display = 'none'
 })
