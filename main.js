@@ -57,14 +57,15 @@ function updateCartModal() {
     let total = 0;
 
     cart.forEach(item => {
-        const creatItemsElement = document.createElement("div");
+        const cartItemsElement = document.createElement("div");
+        cartItemsElement.classList.add("flex", "justify-between", "mb-4", "flex-col")
 
-    creatItemsElement.innerHTML = `
-    <div>
+    cartItemsElement.innerHTML = `
+    <div class="flex items-center justify-between">
         <div>
-            <p>${item.name}</p>
-            <p>${item.quantity}</p>
-            <p>${item.price}</p>
+            <p class="font-medium">${item.name}</p>
+            <p>Qtd: ${item.quantity}</p>
+            <p class="font-medium mt-2">${item.price.toFixed(2)}kz</p>
         </div>
         
         <div>
@@ -72,7 +73,7 @@ function updateCartModal() {
         </div>
         </div>
     `
-        cratItemsContainer.appendChild(creatItemsElement)
+        cratItemsContainer.appendChild(cartItemsElement)
 })
 
 
