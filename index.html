@@ -27,18 +27,18 @@
     </header>
 
     <div class="flex items-center mt-1 px-5 justify-center flex-col">
-        <h1 class="text-base font-bold">Filtrar por categoria</h1>
+        <h1 class="text-base font-bold" id="todos">Filtrar por categoria</h1>
         <div class="flex gap-2 mt-1 text-xs">
-            <button class="bg-gray-300 px-3 py-1 rounded-md">Todos</button>
-            <button class="bg-gray-300 px-3 py-1 rounded-md">Hambúrguer</button>
-            <button class="bg-gray-300 px-3 py-1 rounded-md">Bebidas</button>
+            <button class="bg-gray-300 px-3 py-1 rounded-md"><a href="#todos">Todos</a></button>
+            <button class="bg-gray-300 px-3 py-1 rounded-md"><a href="#hamburg">Hambúrguer</a></button>
+            <button class="bg-gray-300 px-3 py-1 rounded-md"><a href="#bebidas">Bebidas</a></button>
         </div>
     </div>
     
     <h2 class="text-2xl md:3xl font-bold text-center mt-5">Conheça o Nosso Menu</h2>
 
     <div class=" px-3 md:px-10" id="menu">
-<main class="grid grid-cols1 gap-5 md:gap-14 md:grid-cols-2 max-w-7xl mx-auto">
+<main class="grid grid-cols1 gap-5 md:gap-14 md:grid-cols-2 max-w-7xl mx-auto" id="hamburg">
             <div class="mt-6 gap-3 md:gap-4 flex">
                 <img src="/assets/hamb-3.png" alt="hamb-1"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
@@ -113,7 +113,7 @@
             </div>
 
         </main>
-<h2 class="font-bold text-center text-2xl mt-4 md:text-3xl">Bebidas</h2>
+<h2 class="font-bold text-center text-2xl mt-4 md:text-3xl" id="bebidas">Bebidas</h2>
 
 <div class="mx-auto space-y-3 flex flex-col max-w-7xl px-2 mt-2 mb-6" id="menu">
 
